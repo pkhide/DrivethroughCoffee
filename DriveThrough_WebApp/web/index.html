@@ -1,16 +1,55 @@
 <!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
+
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Coffee Menu</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div>TODO write content</div>
+        <div id="orderCoffee">
+            <table>
+                <tr>
+                    <td>test</td>
+                    <td><input type="text" name="txtTest"></td>
+                </tr>
+            </table>            
+        </div>
+
+        <div id="displayMenu">
+            <form method="POST" action="newjsp.jsp">
+                <table border="0">
+                    <tr>
+                        <td>picture</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>coffee name</td>
+                        <td align="center">test name</td>
+                    </tr>
+                    <tr>
+                        <td>coffee type</td> 
+                        <td align="center">
+                            <select>
+                                <option id="coffeeType">Hot</option>
+                                <option id="coffeeType">Cold</option>
+                                <option id="coffeeType">Frappe</option>
+                            </select>
+                        </td> 
+                    </tr>
+                    <tr>
+                        <td>coffee price</td>
+                        <td>
+                            <input type="text" name="txtTotalPrice" value="text value" disabled="false">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" align="right"><input type="submit" name="btnOrder" value="Order"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+
     </body>
 </html>
